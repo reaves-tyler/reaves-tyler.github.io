@@ -1,0 +1,131 @@
+// ── Design Tokens ──
+:root {
+  color-scheme: dark;
+
+  // Aurora Campfire Palette
+  // Deep Teal #014040 | Emerald #02735E | Aurora Green #03A678
+  // Campfire Orange #F27405 | Deep Ember #731702
+
+  // Core palette
+  --color-bg: #021a1a;
+  --color-bg-elevated: rgba(1, 64, 64, 0.6);
+  --color-surface: rgba(2, 115, 94, 0.08);
+  --color-surface-hover: rgba(2, 115, 94, 0.15);
+  --color-border: rgba(3, 166, 120, 0.12);
+
+  // Theme colors
+  --aurora-deep: #014040;
+  --aurora-mid: #02735E;
+  --aurora-bright: #03A678;
+  --fire-orange: #F27405;
+  --fire-ember: #731702;
+
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, var(--aurora-bright), var(--fire-orange));
+  --gradient-accent: linear-gradient(135deg, var(--aurora-mid), var(--aurora-bright));
+  --gradient-warm: linear-gradient(135deg, var(--fire-orange), var(--fire-ember));
+  --gradient-bg: linear-gradient(
+    160deg,
+    #010d0d 0%,
+    #021a1a 30%,
+    #01312a 60%,
+    #021a1a 100%
+  );
+  --gradient-glossy: linear-gradient(
+    170deg,
+    rgba(3, 166, 120, 0.05) 0%,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(242, 116, 5, 0.03) 50%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(3, 166, 120, 0.04) 100%
+  );
+
+  // Text — warm white
+  --text-primary: #e8dfd6;
+  --text-secondary: rgba(232, 223, 214, 0.55);
+  --text-muted: rgba(232, 223, 214, 0.3);
+
+  // Glows
+  --glow-aurora: 0 0 20px rgba(3, 166, 120, 0.35);
+  --glow-fire: 0 0 20px rgba(242, 116, 5, 0.35);
+
+  // Glass — tinted with deep teal
+  --glass-bg: rgba(1, 64, 64, 0.15);
+  --glass-border: rgba(3, 166, 120, 0.1);
+  --glass-blur: 16px;
+
+  // Radii & spacing
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  // Transitions
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+// ── Mixins ──
+@mixin glass($blur: var(--glass-blur)) {
+  background: var(--glass-bg);
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+  border: 1px solid var(--glass-border);
+}
+
+@mixin neon-text($color: var(--aurora-bright)) {
+  color: $color;
+  text-shadow: 0 0 8px rgba(3, 166, 120, 0.4);
+}
+
+@mixin gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// ── Global Reset ──
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--color-bg);
+  background-image: var(--gradient-bg), var(--gradient-glossy);
+  background-attachment: fixed;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--aurora-bright);
+  text-decoration: none;
+  transition: color var(--transition-fast), text-shadow var(--transition-fast);
+
+  &:hover {
+    color: var(--fire-orange);
+    text-decoration: none;
+    text-shadow: 0 0 12px rgba(242, 116, 5, 0.4);
+  }
+}
+
+::selection {
+  background: rgba(3, 166, 120, 0.25);
+  color: var(--text-primary);
+}

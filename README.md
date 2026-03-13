@@ -7,7 +7,7 @@ A personal website built with [Nuxt 3](https://nuxt.com/) and deployed to [GitHu
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Development
@@ -15,7 +15,7 @@ npm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
@@ -23,7 +23,7 @@ npm run dev
 Generate the static site:
 
 ```bash
-npm run generate
+pnpm run generate
 ```
 
 Preview the production build locally:
