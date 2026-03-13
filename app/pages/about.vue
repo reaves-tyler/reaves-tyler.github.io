@@ -2,14 +2,14 @@
   <div class="about">
     <h1 class="page-title">About</h1>
     <p class="lead">
-      This is a Nuxt 3 application deployed to GitHub Pages. It serves as a
+      This is a Nuxt application deployed to GitHub Pages. It serves as a
       starting point for building your personal website or project.
     </p>
 
     <div class="card">
       <h2>Tech Stack</h2>
       <ul>
-        <li><span class="tech-dot" /> Nuxt 3 — The Vue.js Framework</li>
+        <li><span class="tech-dot" /> Nuxt — The Vue.js Framework</li>
         <li><span class="tech-dot purple" /> Vue 3 — Progressive JavaScript Framework</li>
         <li><span class="tech-dot pink" /> GitHub Pages — Static Site Hosting</li>
         <li><span class="tech-dot green" /> GitHub Actions — CI/CD Pipeline</li>
@@ -29,8 +29,8 @@ pnpm run dev</code></pre>
 useSeoMeta({
   title: 'About — Reaves Tyler',
   ogTitle: 'About — Reaves Tyler',
-  description: 'Learn about the tech stack behind Reaves Tyler — built with Nuxt 3, Vue 3, and deployed on GitHub Pages.',
-  ogDescription: 'Learn about the tech stack behind Reaves Tyler — built with Nuxt 3, Vue 3, and deployed on GitHub Pages.'
+  description: 'Learn about the tech stack behind Reaves Tyler — built with Nuxt, Vue 3, and deployed on GitHub Pages.',
+  ogDescription: 'Learn about the tech stack behind Reaves Tyler — built with Nuxt, Vue 3, and deployed on GitHub Pages.'
 })
 </script>
 

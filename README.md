@@ -1,6 +1,6 @@
 # Reaves Tyler
 
-A personal website built with [Nuxt 3](https://nuxt.com/) and deployed to [GitHub Pages](https://pages.github.com/).
+A personal website built with [Nuxt](https://nuxt.com/) and deployed to [GitHub Pages](https://pages.github.com/).
 
 ## Setup
 
@@ -40,22 +40,24 @@ This site is automatically deployed to GitHub Pages via GitHub Actions on every 
 
 ```
 ├── .github/workflows/   # GitHub Actions CI/CD
-├── assets/css/          # Global stylesheets
-├── components/          # Vue components
-├── composables/         # Composable functions
-├── layouts/             # Page layouts
-├── middleware/           # Route middleware
-├── pages/               # File-based routing
-├── plugins/             # Nuxt plugins
+├── app/                 # Application source code
+│   ├── assets/css/      # Global stylesheets
+│   ├── components/      # Vue components
+│   ├── composables/     # Composable functions
+│   ├── layouts/         # Page layouts
+│   ├── middleware/       # Route middleware
+│   ├── pages/           # File-based routing
+│   ├── plugins/         # Nuxt plugins
+│   ├── app.vue          # App entry component
+│   └── error.vue        # Error page
 ├── public/              # Static assets
-├── server/api/          # Server API routes
-├── app.vue              # App entry component
+├── server/              # Server routes
 ├── nuxt.config.ts       # Nuxt configuration
 └── package.json         # Dependencies and scripts
 ```
 
 ## Learn More
 
-- [Nuxt 3 Documentation](https://nuxt.com/docs)
+- [Nuxt Documentation](https://nuxt.com/docs)
 - [Vue 3 Documentation](https://vuejs.org/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)

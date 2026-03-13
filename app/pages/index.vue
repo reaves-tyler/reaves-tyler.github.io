@@ -3,12 +3,12 @@
     <section class="hero">
       <div class="hero-glow" />
       <div class="hero-sweep" />
-      <span class="hero-badge">✦ Built with Nuxt 3</span>
+      <span class="hero-badge">✦ Built with Nuxt</span>
       <h1 class="hero-title">
         Welcome to
         <span class="gradient-text">Reaves Tyler</span>
       </h1>
-      <p class="subtitle">A modern website built with Nuxt 3 and deployed on GitHub Pages.</p>
+      <p class="subtitle">A modern website built with Nuxt and deployed on GitHub Pages.</p>
     </section>
 
     <section class="features">
@@ -27,13 +27,13 @@
 useSeoMeta({
   title: 'Home — Reaves Tyler',
   ogTitle: 'Reaves Tyler',
-  description: 'A modern personal site built with Nuxt 3 and deployed on GitHub Pages.',
-  ogDescription: 'A modern personal site built with Nuxt 3 and deployed on GitHub Pages.'
+  description: 'A modern personal site built with Nuxt and deployed on GitHub Pages.',
+  ogDescription: 'A modern personal site built with Nuxt and deployed on GitHub Pages.'
 })
 
 const features = [
   {
-    title: 'Nuxt 3',
+    title: 'Nuxt',
     description: 'Built on the latest version of Nuxt with Vue 3 and the Composition API.',
     icon: '🚀'
   },
